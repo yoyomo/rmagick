@@ -37,7 +37,7 @@
 #undef PACKAGE_TARNAME
 #undef WORDS_BIGENDIAN
 
-#include "magick/MagickCore.h"
+#include "MagickCore/MagickCore.h"
 #include "magick/magick-config.h"
 
 // Undef ImageMagick's versions of these symbols
