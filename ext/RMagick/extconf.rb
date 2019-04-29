@@ -48,8 +48,8 @@ module RMagick
       @headers = %w[assert.h ctype.h stdio.h stdlib.h math.h time.h]
       headers << 'sys/types.h' if have_header('sys/types.h')
 
-      if have_header('magick/MagickCore.h')
-        headers << 'magick/MagickCore.h'
+      if have_header('MagickCore/MagickCore.h')
+        headers << 'MagickCore/MagickCore.h'
       else
         exit_failure "Can't install RMagick #{RMAGICK_VERS}. Can't find magick/MagickCore.h."
       end
